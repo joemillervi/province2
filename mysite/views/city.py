@@ -1,5 +1,5 @@
 from django.http import HttpResponse
 
-def render(request, profession, city_1):
-    html = "%s%s" % (city_1, profession)
+def render(request, city_info):
+    html = '{response}'.format(response=city_info)
     return HttpResponse(html)
